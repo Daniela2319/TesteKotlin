@@ -1,2 +1,0 @@
-# TesteKotlin
-Teste
