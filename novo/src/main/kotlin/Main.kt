@@ -15,6 +15,11 @@ fun saudacao(nome: Int, carteira: Int): Int{
 
 
 }
+  fun olaMundo(){
+      println("Olá Mundo!")
+  }
+
+val frutas: List<String> = listOf("Maça", "Pera", "Uva", "Mamão")
 
 fun main() {
     val pessoal = pessoa("Maria",22)
@@ -23,6 +28,14 @@ fun main() {
     println(pessoal)
     println(resultado)
 
+    for ((index: Int, fruta: String) in frutas.withIndex()){
+        println("$index: $fruta")
+    }
+    frutas.forEachIndexed{index, fruta -> // maneira mais simplificada para rodar uma lista
+        println("$index: $fruta")
+    }
+
+    olaMundo()
 
 
 }
